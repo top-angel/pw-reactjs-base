@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta2 # before 1.9
+kind: Deployment
+metadata:
+  name: pw-reactjs-base
+spec:
+  selector:
+    matchLabels:
+      app: pw-reactjs-base
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: pw-reactjs-base
+    spec:
+      containers:
+      - name: pw-reactjs-base
+        image: pineappleworkshop/pw-reactjs-base:0.0.1

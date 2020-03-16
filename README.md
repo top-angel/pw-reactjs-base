@@ -6,7 +6,20 @@ This is a reactjs base for all other reactjs projects to be built on.
 
 ```bash
 # install dependencies
-$ yarn install
+$ make bootstrap
 # run development server
-$ yarn start
+$ make dev
+```
+
+# Deploying
+
+```bash
+# bump version
+$ make bumpversion-patch
+# stage work
+$ git add .
+# commit work
+$ git commit -m "{your commit message}"
+# build, push, deploy
+$ make deploy
 ```
